@@ -1,5 +1,5 @@
 .header-hero-bg {
-    background-image: url('/img/heroImage.png');  /*Ganti dengan path gambar Anda */
+    background-image: url('../img/heroImage.png');  /*Ganti dengan path gambar Anda */
     background-color: #00365dff;
     background-size: cover;
     background-position: center;

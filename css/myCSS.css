@@ -69,7 +69,7 @@
     z-index: 2; /* Letakkan konten di atas overlay */
   }
   .bg-sec {
-    background-color: #f7f7f7;  /* Ganti dengan warna yang Anda inginkan */
+    background-color: #ffea63;  /* Ganti dengan warna yang Anda inginkan */
     border-radius: 20px;        /* Mengatur sudut lengkung, bisa diubah */
     padding: 20px;              /* Tambahkan padding agar konten tidak menempel ke tepi */
     margin-bottom: 20px;        /* Memberi jarak antar section */
@@ -78,6 +78,32 @@
     align-items: center; /* Untuk memusatkan konten secara horizontal */
 
   }
+  .bg-sec-img {
+    background-image: url('../img/hereIno.png');
+    background-size: contain; /* Atur gambar agar sesuai dengan tinggi konten */
+    background-position: right bottom; /* Posisi gambar berada di tengah atas */
+    background-repeat: no-repeat; /* Hapus pengulangan gambar */
+    padding: 40px 20px; /* Padding untuk jarak konten dari tepi */
+                /* Untuk menonjolkan teks di atas gambar */
+  }
+
+  
+  .bg-sec-img-20 {
+    background-image: url('../img/footer.png');
+    background-size: contain; /* Atur gambar agar sesuai dengan tinggi konten */
+    background-position: right bottom; /* Posisi gambar berada di tengah atas */
+    background-repeat: no-repeat; /* Hapus pengulangan gambar */
+    padding: 40px 20px; /* Padding untuk jarak konten dari tepi */
+                /* Untuk menonjolkan teks di atas gambar */
+  }
+
+  /* Media query untuk mode mobile */
+@media (max-width: 768px) { /* Atur sesuai breakpoint yang Anda inginkan */
+  .bg-sec-img-20 {
+    background-size: cover; /* Menyesuaikan lebar dan tinggi, memotong jika perlu */
+    background-position: center; /* Memusatkan gambar agar terlihat seimbang */
+  }
+}
   .taglineText {
     color: #f4e04dff; /* Ganti dengan warna HEX, RGB, atau nama warna yang Anda inginkan */
   }

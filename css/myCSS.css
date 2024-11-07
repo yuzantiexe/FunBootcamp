@@ -14,6 +14,21 @@
 
   }
 
+  .gambar-section {
+    background-color: #f0f8ff;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Untuk memusatkan konten secara horizontal */
+  }
+  
+  .section-image {
+    width: 100%;
+    height: auto; /* Membuat gambar responsif dan menjaga rasio */
+    border-radius: 20px 20px 0 0; /* Hanya melengkungkan bagian atas gambar jika diinginkan */
+  }
+
 /* 
   .header-hero-bg::before {
     content: '';
@@ -26,11 +41,43 @@
     z-index: 1; /* Letakkan overlay di atas background 
   }
    */
+
+   .b-ex-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(249, 249, 249, 0.1);
+    border: solid rgba(239, 239, 239, 0.15);
+    border-width: 1px 0;
+    /* box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15); */
+  }
+  .smoke-bg-section {
+    padding: 40px;                  /* Spasi internal agar konten tidak terlalu menempel ke tepi */
+    color: white;                   /* Warna teks putih agar lebih jelas di atas latar */
+    border-radius: 20px;            /* Membuat sudut melengkung */
+    background: radial-gradient(
+        circle, 
+        rgba(0, 128, 128, 0.5),     /* Biru kehijauan transparan */
+        rgba(255, 165, 0, 0.3),     /* Oranye transparan */
+        rgba(0, 255, 127, 0.4)      /* Hijau transparan */
+      );
+    background-blend-mode: multiply;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Menambahkan sedikit bayangan untuk efek smoke */
+  }
+
   .header-hero-bg * {
     position: relative;
     z-index: 2; /* Letakkan konten di atas overlay */
   }
+  .bg-sec {
+    background-color: #f7f7f7;  /* Ganti dengan warna yang Anda inginkan */
+    border-radius: 20px;        /* Mengatur sudut lengkung, bisa diubah */
+    padding: 20px;              /* Tambahkan padding agar konten tidak menempel ke tepi */
+    margin-bottom: 20px;        /* Memberi jarak antar section */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Untuk memusatkan konten secara horizontal */
 
+  }
   .taglineText {
     color: #f4e04dff; /* Ganti dengan warna HEX, RGB, atau nama warna yang Anda inginkan */
   }
@@ -63,6 +110,11 @@
   font-style: normal;
   font-variation-settings:
     "wdth" 200;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
 }
 
 .poppins-thin {
